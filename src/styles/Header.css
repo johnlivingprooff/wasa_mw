@@ -88,9 +88,9 @@
 }
 
 /* tablet view */
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
     header {
-        height: 10vh;
+        height: 15vh;
         width: 100%;
         background-color: #f8f8f8;
         display: flex;
@@ -138,7 +138,7 @@
         position: absolute;
         width: 100%;
         background-color: #f8f8f8;
-        top: 1vh;
+        top: 5vh;
     }
 
     nav.visible {
@@ -174,7 +174,7 @@
 }
 
 /* laptop view */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 769px) and (max-width: 1919px) {
     header {
         height: 10vh;
         width: 100%;

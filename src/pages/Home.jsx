@@ -7,8 +7,10 @@ import img2 from '../assets/student-loan.avif'
 import img3 from '../assets/production-line-crop.jpg'
 import img4 from '../assets/scholarships.jpg'
 import img5 from '../assets/travel.jpg'
+import Partners from '../components/Partners.jsx';
+import About from '../components/About.jsx';
 
-const images = [
+const slide_images = [
   {
     url: img1,
     alt: 'cruise-ship',
@@ -22,7 +24,7 @@ const images = [
     alt: 'education-loan',
     title: 'Educational Loans – Study Now, Pay Later',
     body: 'WASA partners with an international financier to offer loans for postgraduate studies covering tuition, airfare, living expenses, and more.',
-    ctaTxt: 'Learn More',
+    ctaTxt: 'Apply Today',
     link: 'https://forms.gle/GirbhnEghStmtT5e6'
   },
   {
@@ -56,8 +58,12 @@ export default function Home() {
     <div>
         <Header />
         <div className="slide-container">
-          <Sliders images={images} />
+          <Sliders images={slide_images} />
         </div>
+        <div className="partner-container">
+          <Partners />
+        </div>
+        <About />
     </div>
   );
 }

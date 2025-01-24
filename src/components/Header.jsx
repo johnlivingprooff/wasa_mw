@@ -35,7 +35,7 @@ function Header() {
                         <a href="#contact">Contact Us</a>
                     </li>
                     <a href="https://forms.gle/GirbhnEghStmtT5e6" target="_blank">
-                        <button class='btn'>Apply for Study Loan</button>
+                        <button class='btn'>Study Loan</button>
                     </a>
                     <a href="https://work-and-study-abroad.bookafy.com/" target="_blank">
                         <button class='btn'>Book Appointment</button>

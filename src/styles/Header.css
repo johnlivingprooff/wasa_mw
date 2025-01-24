@@ -1,13 +1,16 @@
 /* mobile screen */
 @media screen and (max-width: 500px) {
     header {
-        height: 18vh;
+        height: 10vh;
         width: 100%;
         background-color: #f8f8f8;
         display: flex;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     #logo {
@@ -49,6 +52,7 @@
         position: absolute;
         width: 100%;
         background-color: #f8f8f8;
+        z-index: 10000;
     }
 
     nav.visible {
@@ -60,7 +64,7 @@
         width: 100%;
         background-color: #f8f8f8;
         position: absolute;
-        top: 5vh;
+        top: 3vh;
         transition: 0.5s;
         padding: 15px 25px 25px;
     }
@@ -90,13 +94,16 @@
 /* tablet view */
 @media screen and (min-width: 501px) and (max-width: 768px) {
     header {
-        height: 15vh;
+        height: 10vh;
         width: 100%;
         background-color: #f8f8f8;
         display: flex;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     #logo {
@@ -176,13 +183,16 @@
 /* laptop view */
 @media screen and (min-width: 769px) and (max-width: 1919px) {
     header {
-        height: 10vh;
+        height: 12vh;
         width: 100%;
         background-color: #f8f8f8;
         display: flex;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     #logo {
@@ -194,8 +204,8 @@
 
     .logo {
         display: grid;
-        grid-template-columns: 15% 75%;
-        width: 100%;
+        grid-template-columns: 20% 45%;
+        width: 60%;
         margin-left: 25px;
     }
 
@@ -221,15 +231,16 @@
     nav {
         display: flex;
         width: 100%;
+        align-items: center;
     }
 
     nav ul {
         display: flex;
         list-style: none;
-        width: 100%;
+        width: 190%;
         background-color: #f8f8f8;
         justify-content: flex-end;
-        padding: 15px 25px;
+        padding: 5px;
     }
 
     nav ul li {
@@ -241,7 +252,7 @@
         text-decoration: none;
         color: #333;
         font-family: 'Raleway', sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
@@ -261,6 +272,9 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     #logo {
@@ -334,7 +348,7 @@
     border: none;
     padding: 10px 20px;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     cursor: pointer;
     border-radius: 5px;

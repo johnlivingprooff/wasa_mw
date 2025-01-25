@@ -81,7 +81,7 @@
 
   .slide-dot {
     all: unset;
-    color: #1c5aa6;
+    color: #d3e7ff;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
@@ -188,7 +188,7 @@
 
   .slide-dot {
     all: unset;
-    color: #1c5aa6;
+    color: #d3e7ff;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
@@ -295,8 +295,8 @@
 
       .slide-dot {
         all: unset;
-        color: #1c5aa6;
-        cursor: pointer;
+        cursor: pointer;    
+        color: #d3e7ff;
         width: 1rem;
         height: 1rem;
         transition: scale 0.5s ease-in-out;
@@ -402,7 +402,7 @@
 
   .slide-dot {
     all: unset;
-    color: #1c5aa6;
+    color: #d3e7ff;
     cursor: pointer;
     width: 1rem;
     height: 1rem;

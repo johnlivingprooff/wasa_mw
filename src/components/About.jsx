@@ -3,9 +3,7 @@ import '../styles/About.css'
 export default function About() {
     return (
         <div className='abt-container'>
-            <div className='abt-img'>
-                hello
-            </div>
+            <div className='abt-img'></div>
             <div className='abt-txt'>
                 <h2>About Us</h2>
                 <p>

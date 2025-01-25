@@ -9,6 +9,7 @@ import img4 from '../assets/scholarships.jpg'
 import img5 from '../assets/travel.jpg'
 import Partners from '../components/Partners.jsx';
 import About from '../components/About.jsx';
+import Services from '../components/Services.jsx';
 
 const slide_images = [
   {
@@ -64,6 +65,7 @@ export default function Home() {
           <Partners />
         </div>
         <About />
+        <Services />
     </div>
   );
 }

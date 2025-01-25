@@ -18,6 +18,14 @@ export default function About() {
                 <blockquote>
                     Our Vision is To be Africa's leading international immigration consultant.
                 </blockquote>
+                <p>
+                    <h3>GUIDING PRINCIPLES</h3>
+                    <b>Integrity, Transparency, and Fulfillment</b> are at the core of our operations. We
+                    treat each client with the utmost care and dedication, guiding them through
+                    every step of their relocation journey. Our commitment extends beyond the
+                    initial transaction, as we strive to support our clients even after they have
+                    settled abroad.
+                </p>
             </div>
         </div>
     );

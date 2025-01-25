@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Home.css'
 import Header from '../components/Header.jsx'
 import Sliders from '../components/Sliders.jsx'
@@ -10,6 +10,9 @@ import img5 from '../assets/travel.jpg'
 import Partners from '../components/Partners.jsx';
 import About from '../components/About.jsx';
 import Services from '../components/Services.jsx';
+import Contact from '../components/Contact.jsx';
+import Footer from '../components/Footer.jsx';
+import Map from '../components/Map.jsx';
 
 const slide_images = [
   {
@@ -55,17 +58,48 @@ const slide_images = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    const handleSmoothScroll = (event) => {
+      if (event.target.tagName === 'A' && event.target.hash !== '') {
+        event.preventDefault();
+        const targetId = event.target.hash.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    document.addEventListener('click', handleSmoothScroll);
+
+    return () => {
+      document.removeEventListener('click', handleSmoothScroll);
+    };
+  }, []);
+
   return (
     <div>
         <Header />
         <div className="slide-container">
           <Sliders images={slide_images} />
         </div>
+        <span id='about'></span>
         <div className="partner-container">
           <Partners />
         </div>
         <About />
+        <span id='services'></span>
         <Services />
+        <div className="start-now" >
+          <div style={{textAlign: 'center', padding: '50px 0', backdropFilter: 'blur(5px)', backgroundColor: 'rgba(10, 10, 10, 0.5)', width: '100%'}}>
+          <h2>Start Your Journey</h2>
+          <h1>NOW</h1>
+          </div>
+        </div>
+        <span id='contact'></span>
+        <Contact />
+        <Map />
+        <Footer />
     </div>
   );
 }

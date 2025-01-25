@@ -3,7 +3,6 @@ import '../styles/About.css'
 export default function About() {
     return (
         <div className='abt-container'>
-            <span id='about'></span>
             <div className='abt-img'>
                 hello
             </div>

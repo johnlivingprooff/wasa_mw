@@ -1,0 +1,374 @@
+/* mobile screen */
+@media screen and (max-width: 500px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        overflow: hidden;
+        font-family: 'Raleway', sans-serif;
+    }
+    #contact-form {
+        display: block;
+        margin-top: 10px;
+        padding: 1rem 2.5rem;
+        margin-left: 25px;
+        width: 100%;
+    }
+    
+    #contact-form h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+    
+    #contact-form textarea {
+        width: 350px;
+        padding: 8px;
+        border: 1px solid #464646;
+    }
+    
+    #contact-form input {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 25px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #contact-form input:hover {
+        border-bottom: beige solid 1px;
+    }
+
+    #contact-form select, #contact-form option {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+        font-style: italic;
+    }
+    
+    #contact-form form button {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: #1c5aa6;
+        color: #fefefe;
+        padding: 10px 15px;
+        border: none;
+        transition: all ease 0.5s;
+    }
+    
+    #contact-form form button:hover {
+        background-color: #fefefe;
+        color: #164074;
+    }
+    
+    .side-img-form {
+        width: 85%;
+        height: 650px;
+        background-image: url(../assets/vatican.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 990px;
+        margin-top: 0;
+        margin-left: 10px;
+        transition: background-size 0.5s ease;
+        display: none;
+    }
+    
+    .side-img-form:hover {
+        background-size: 1100px;
+    }
+
+}
+  
+/* tablet screen */
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    #contact-form {
+        display: block;
+        margin-top: 10px;
+        padding: 1rem;
+        margin-left: 65px;
+        width: 70%;
+    }
+    
+    #contact-form h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+    
+    #contact-form textarea {
+        width: 350px;
+        padding: 8px;
+        border: 1px solid #464646;
+    }
+    
+    #contact-form input {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 25px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #contact-form input:hover {
+        border-bottom: beige solid 1px;
+    }
+
+    #contact-form select, #contact-form option {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+        font-style: italic;
+    }
+    
+    #contact-form form button {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: #1c5aa6;
+        color: #fefefe;
+        padding: 10px 15px;
+        border: none;
+        transition: all ease 0.5s;
+    }
+    
+    #contact-form form button:hover {
+        background-color: #fefefe;
+        color: #164074;
+    }
+    
+    .side-img-form {
+        width: 30%;
+        height: 650px;
+        background-image: url(../assets/vatican.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 990px;
+        margin-top: 0;
+        margin-left: 10px;
+        transition: background-size 0.5s ease;
+    }
+    
+    .side-img-form:hover {
+        background-size: 1100px;
+    }
+}
+  
+/* laptop screen */
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    #contact-form {
+        display: block;
+        margin-top: 10px;
+        padding: 1rem;
+        margin-left: 65px;
+        width: 40%;
+    }
+    
+    #contact-form h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+    
+    #contact-form textarea {
+        width: 350px;
+        padding: 8px;
+        border: 1px solid #464646;
+    }
+    
+    #contact-form input {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 25px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #contact-form input:hover {
+        border-bottom: beige solid 1px;
+    }
+
+    #contact-form select, #contact-form option {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+        font-style: italic;
+    }
+    
+    #contact-form form button {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: #1c5aa6;
+        color: #fefefe;
+        padding: 10px 15px;
+        border: 1px solid #1c5aa6;
+        transition: all ease 0.25s;
+        cursor: pointer;
+    }
+    
+    #contact-form form button:hover {
+        background-color: #fefefe;
+        color: #164074;
+        border: 1px solid #1c5aa6;
+    }
+    
+    .side-img-form {
+        width: 60%;
+        height: 650px;
+        background-image: url(../assets/vatican.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 990px;
+        transition: background-size 0.5s ease;
+    }
+
+    .side-img-form:hover {
+        background-size: 1100px;
+    }
+}
+  
+/* desktop screen */
+@media screen and (min-width: 1920px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    #contact-form {
+        display: block;
+        margin-top: 10px;
+        padding: 1rem;
+        margin-left: 65px;
+        width: 40%;
+    }
+    
+    #contact-form h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+    
+    #contact-form textarea {
+        width: 350px;
+        padding: 8px;
+        border: 1px solid #464646;
+    }
+    
+    #contact-form input {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 25px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #contact-form input:hover {
+        border-bottom: beige solid 1px;
+    }
+
+    #contact-form select, #contact-form option {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+        border-bottom: solid #464646 1px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+        font-style: italic;
+    }
+    
+    #contact-form form button {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-color: #1c5aa6;
+        color: #fefefe;
+        padding: 10px 15px;
+        border: 1px solid #1c5aa6;
+        transition: all ease 0.25s;
+        cursor: pointer;
+    }
+    
+    #contact-form form button:hover {
+        background-color: #fefefe;
+        color: #164074;
+        border: 1px solid #1c5aa6;
+    }
+    
+    .side-img-form {
+        width: 60%;
+        height: 650px;
+        background-image: url(../assets/vatican.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 990px;
+        transition: background-size 0.5s ease;
+    }
+
+    .side-img-form:hover {
+        background-size: 1100px;
+    }
+}

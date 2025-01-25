@@ -53,7 +53,7 @@
 
     .abt-img {
         height: 69vh;
-        width: 60%;
+        width: 40%;
         background-image: url('../assets/about1.jpg');
         background-size: cover;
         background-position: right;
@@ -64,7 +64,7 @@
 
     .abt-txt {
         padding: 0 30px;
-        width: 40%;
+        width: 60%;
     }
 
     .abt-txt h2 {

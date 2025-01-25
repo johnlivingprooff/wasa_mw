@@ -8,6 +8,42 @@
         width: 100%;
         display: block;
     }
+
+    .start-now {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        height: fit-content;
+        background: url('../assets/vatican.jpg');
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        place-items: center;
+        font-family: 'raleway', sans-serif;
+        align-self: center;
+        text-shadow: 2px 10px 20px #000;
+    }
+
+    .start-now h2 {
+        font-size: 1rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-bottom: 0;
+    }
+
+    .start-now h1 {
+        font-size: 5rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-top: -15px;
+    }
 }
 
 /* tablet screen */
@@ -15,6 +51,42 @@
     .slide-container {
         width: 100%;
         aspect-ratio: 10/5;
+    }
+
+    .start-now {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        height: fit-content;
+        background: url('../assets/vatican.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        place-items: center;
+        font-family: 'raleway', sans-serif;
+        align-self: center;
+        text-shadow: 2px 2px 20px #000;
+    }
+
+    .start-now h2 {
+        font-size: 1rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-bottom: 0;
+    }
+
+    .start-now h1 {
+        font-size: 5rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-top: -15px;
     }
 }
 
@@ -24,6 +96,40 @@
         width: 100%;
         aspect-ratio: 10/5;
     }
+    .start-now {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        height: fit-content;
+        background: url('../assets/vatican.jpg');
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        place-items: center;
+        font-family: 'raleway', sans-serif;
+        align-self: center;
+    }
+
+    .start-now h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-bottom: 0;
+    }
+
+    .start-now h1 {
+        font-size: 10rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-top: -15px;
+    }
 }
 
 /* desktop screen */
@@ -31,5 +137,40 @@
     .slide-container {
         width: 100%;
         aspect-ratio: 10/4;
+    }
+
+    .start-now {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        height: fit-content;
+        background: url('../assets/vatican.jpg');
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        place-items: center;
+        font-family: 'raleway', sans-serif;
+        align-self: center;
+    }
+
+    .start-now h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-bottom: 0;
+    }
+
+    .start-now h1 {
+        font-size: 10rem;
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 850;
+        color: #e2dcdc;
+        margin-top: -15px;
     }
 }

@@ -35,13 +35,13 @@ export default function Appointment() {
                         <div className="person">
                             <img src="" alt="" />
                             <h3>Dingani N. Daniel</h3><br />
-                            <a href="https://appt.link/meet-with-our-expert-DFJETQAY" target='_blank'>Book a Spot</a>
+                            <a href="https://appt.link/meet-with-our-expert-DFJETQAY" target='_blank' rel="noreferrer">Book a Spot</a>
                         </div>
                         <div className="line"></div>
                         <div className="person">
                             <img src="" alt="" />
                             <h3>Susan J. Daniels</h3><br />
-                            <a href="https://appt.link/meet-with-susan-jackson-uyJmf3Uf" target='_blank'>Book a Spot</a>
+                            <a href="https://appt.link/meet-with-susan-jackson-uyJmf3Uf" target='_blank' rel="noreferrer">Book a Spot</a>
                         </div>
                     </div>
                 </div>

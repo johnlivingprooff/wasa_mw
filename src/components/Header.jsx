@@ -35,7 +35,7 @@ function Header() {
                     <li>
                         <a href="#contact" onClick={toggleNav}>Contact Us</a>
                     </li>
-                    <a href="https://forms.gle/GirbhnEghStmtT5e6" target="_blank">
+                    <a href="https://forms.gle/GirbhnEghStmtT5e6" target="_blank" rel="noreferrer">
                         <button class='btn'>Study Loan</button>
                     </a>
                     <a href="/appointment">

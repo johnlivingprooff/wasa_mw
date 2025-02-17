@@ -8,7 +8,9 @@ export default function Sliders({ images }) {
 
     useEffect(() => {
         startAutoplay();
+        // eslint-disable-next-line
         return () => stopAutoplay();
+        // eslint-disable-next-line
     }, [images.length]);
 
     const startAutoplay = () => {

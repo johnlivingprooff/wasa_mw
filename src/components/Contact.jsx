@@ -11,21 +11,38 @@ export default function Contact() {
 
     const submitForm = async (event) => {
         event.preventDefault();
-        const result = await fetch("/api/sendContactForm", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email,
-                name,
-                phone,
-                service,
-                message,
-            }),
-        });
 
-        setStatusMessage(await result.text());
+        try {
+            const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+                method: "POST",
+                headers: {
+                    accept: "application/json",
+                    "api-key": process.env.REACT_APP_BREVO_API_KEY, // Ensure this is defined in .env
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify({
+                    sender: { name: "WASA | Front Desk", email: "studyabroad275@gmail.com" },
+                    to: [{ email: "studyabroad275@gmail.com", name: "WASA | Front Desk" }],
+                    replyTo: { email, name },
+                    subject: "Web Contact Form",
+                    textContent: `Service Requested: ${service} \nMessage: ${message} \nPhone: ${phone} \nEmail: ${email}`,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.message || "Message could not be sent.");
+            }
+
+            setStatusMessage("Message sent successfully.");
+        } catch (error) {
+            setStatusMessage(error.message);
+        }
+
+        setTimeout(() => {
+            setStatusMessage("");
+        }, 5000); // Message will disappear after 5 seconds
     };
 
     return (
@@ -56,13 +73,13 @@ export default function Contact() {
                     placeholder="Your Email"
                     required
                 /><br /><br />
-                <select name="services" id="service" required>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>Select Service</option>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>Study Loans [Post-Graduate]</option>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>Student VISA</option>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>Europe Jobs</option>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>Scholarships</option>
-                    <option value={service} onChange={(e) => setService(e.target.value)}>General Services</option>
+                <select name="services" id="service" required onChange={(e) => setService(e.target.value)}>
+                    <option value="">Select Service</option>
+                    <option value="Study Loans [Post-Graduate]">Study Loans [Post-Graduate]</option>
+                    <option value="Student VISA">Student VISA</option>
+                    <option value="Europe Jobs">Europe Jobs</option>
+                    <option value="Scholarships">Scholarships</option>
+                    <option value="General Services">General Services</option>
                 </select><br />
                 <label htmlFor="message">Leave Your Message:</label><br /><br />
                 <textarea
@@ -75,7 +92,7 @@ export default function Contact() {
             </form><br />
             <div id="contact-message">{statusMessage}</div>
         </div>
-        <div class="side-img-form"></div>
+        <div className="side-img-form"></div>
         </section>
     );
 }

@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import Header from '../components/Header2';
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import daniel from '../assets/Daniel.jpg';
+import susan from '../assets/Susan.jpg';
 
 export default function Appointment() {
       useEffect(() => {
@@ -33,13 +35,13 @@ export default function Appointment() {
                     <p>With one of Our Consultants</p>
                     <div className="people">
                         <div className="person">
-                            <img src="" alt="" />
-                            <h3>Dingani N. Daniel</h3><br />
+                            <img src={daniel} alt="Dingani N. Daniels" />
+                            <h3>Dingani N. Daniels</h3><br />
                             <a href="https://appt.link/meet-with-our-expert-DFJETQAY" target='_blank' rel="noreferrer">Book a Spot</a>
                         </div>
                         <div className="line"></div>
                         <div className="person">
-                            <img src="" alt="" />
+                            <img src={susan} alt="Susan J. Daniels" />
                             <h3>Susan J. Daniels</h3><br />
                             <a href="https://appt.link/meet-with-susan-jackson-uyJmf3Uf" target='_blank' rel="noreferrer">Book a Spot</a>
                         </div>

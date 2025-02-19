@@ -36,7 +36,7 @@ export default function Sliders({ images }) {
                         >
                             <h2>{image.title}</h2>
                             <p>{image.body}</p>
-                            <a href={image.link}>{image.ctaTxt}</a>
+                            <a href={image.link} target='_blank' rel="noreferrer">{image.ctaTxt}</a>
                         </div>
                     </div>
                 ))}

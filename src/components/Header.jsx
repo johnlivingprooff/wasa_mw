@@ -14,7 +14,9 @@ function Header() {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="WASA_mw" id='logo' />
+                <a href="/">
+                    <img src={logo} alt="WASA_mw" id='logo' />
+                </a>
                 <span>
                     <h2>WASA</h2>
                     <p>Work And Study Abroad</p>

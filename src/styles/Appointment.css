@@ -68,7 +68,7 @@
 
     .line {
         margin: 30px 20px 20px 20px;
-        border: 0.5px solid #fff;
+        border: 0.5px solid #ffffff10;
     }
 }
   
@@ -159,14 +159,15 @@
         justify-content: center;
         text-align: center;
         margin: 0 auto;
-        padding: 50px;
+        padding: 25px 50px 40px;
         background-color: #00000053;
         backdrop-filter: blur(5px);
         color: #fff;
+        width: 25%;
     }
 
     .container h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin: 0;
         font-weight: 800;
         text-transform: uppercase;
@@ -174,8 +175,9 @@
 
     .container p {
         margin: 0;
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-style: italic;
+        margin-bottom: 15px;
     }
 
     .people {
@@ -216,7 +218,7 @@
 
     .line {
         margin: 30px 20px 20px;
-        border: 0.5px solid #fff;
+        border: 0.4px solid #ffffff50;
     }
 }
   

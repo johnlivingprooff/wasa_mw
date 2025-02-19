@@ -32,7 +32,7 @@ export default function Appointment() {
             <section className="appt-co">
                 <div className="container">
                     <h1>Book an Appointment</h1>
-                    <p>With one of Our Consultants</p>
+                    <p>With Our Experts</p>
                     <div className="people">
                         <div className="person">
                             <img src={daniel} alt="Dingani N. Daniels" />

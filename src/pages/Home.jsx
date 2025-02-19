@@ -13,6 +13,7 @@ import Services from '../components/Services.jsx';
 import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.jsx';
 import Map from '../components/Map.jsx';
+import WA from '../components/WA.jsx';
 
 const slide_images = [
   {
@@ -100,6 +101,7 @@ export default function Home() {
         <Contact />
         <Map />
         <Footer />
+        <WA />
     </div>
   );
 }

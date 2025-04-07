@@ -22,7 +22,7 @@ const slide_images = [
     title: 'Cruise Ship Jobs – Careers on the High Seas',
     body: 'Dream of working on a cruise ship? WASA recruits for international cruise lines.',
     ctaTxt: 'Apply Now',
-    link: 'https://bit.ly/Workandstudyabroad'
+    link: 'https://forms.gle/HyLeLdQfezTJV9fC8'
   },
   {
     url: img2,

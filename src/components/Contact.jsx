@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [email, setEmail] = useState("");
@@ -13,26 +14,24 @@ export default function Contact() {
         event.preventDefault();
 
         try {
-            const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+            const response = await fetch("/api/sendContactForm", {
                 method: "POST",
                 headers: {
-                    accept: "application/json",
-                    "api-key": process.env.REACT_APP_BREVO_API_KEY, // Ensure this is defined in .env
-                    "content-type": "application/json",
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    sender: { name: "WASA | Front Desk", email: "studyabroad275@gmail.com" },
-                    to: [{ email: "studyabroad275@gmail.com", name: "WASA | Front Desk" }],
-                    replyTo: { email, name },
-                    subject: "Web Contact Form",
-                    textContent: `Service Requested: ${service} \nMessage: ${message} \nPhone: ${phone} \nEmail: ${email}`,
+                    name,
+                    email,
+                    phone,
+                    service,
+                    message,
                 }),
             });
 
             const result = await response.json();
 
             if (!response.ok) {
-                throw new Error(result.message || "Message could not be sent.");
+                throw new Error(result.error || "Message could not be sent.");
             }
 
             setStatusMessage("Message sent successfully.");

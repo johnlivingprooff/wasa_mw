@@ -50,15 +50,17 @@ export default function Appointment() {
               <div className="person">
                 <img src={susan} alt="Susan J. Daniels" />
                 <h3>Susan J. Daniels</h3><br />
-                <a
-                  href="https://appt.link/meet-with-susan-jackson-uyJmf3Uf"
-                  target='_blank'
-                  rel="noreferrer"
-                  style={{ pointerEvents: 'none', opacity: 0.5 }}
-                  tabIndex={-1}
-                  aria-disabled="true"
-                  onClick={e => e.preventDefault()}
-                >Book a Spot</a>
+                  <a
+                    href="https://appointmentwasa1.youcanbook.me"
+                    target='_blank'
+                    rel="noreferrer"
+                    // style={{ pointerEvents: 'none', opacity: 0.5 }}
+                    // tabIndex={-1}
+                    // aria-disabled="true"
+                    // onClick={e => e.preventDefault()}
+                  >
+                    Book a Spot
+                  </a>
               </div>
             </div>
           </div>

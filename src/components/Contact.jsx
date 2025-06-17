@@ -14,34 +14,27 @@ export default function Contact() {
         event.preventDefault();
 
         try {
-            const response = await fetch("/api/sendContactForm", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
+            await emailjs.send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                {
+                    from_name: name,
+                    from_email: email,
+                    phone: phone,
+                    service: service,
+                    message: message,
                 },
-                body: JSON.stringify({
-                    name,
-                    email,
-                    phone,
-                    service,
-                    message,
-                }),
-            });
-
-            const result = await response.json();
-
-            if (!response.ok) {
-                throw new Error(result.error || "Message could not be sent.");
-            }
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            );
 
             setStatusMessage("Message sent successfully.");
         } catch (error) {
-            setStatusMessage(error.message);
+            setStatusMessage("Failed to send message. Please try again.");
         }
 
         setTimeout(() => {
             setStatusMessage("");
-        }, 5000); // Message will disappear after 5 seconds
+        }, 5000);
     };
 
     return (
